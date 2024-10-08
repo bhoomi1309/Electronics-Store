@@ -1,0 +1,181 @@
+body{
+    background-color: #fadeee;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* App.js */
+.nav-link.active{
+    font-weight: bold;
+}
+
+/* Home.js */
+.bgImg{
+    background-image: url('./bgImg.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 91.7vh;
+}
+.buttonDiv{
+    margin: 35px 10px 25px 45px;
+    padding: 10px 20px 10px 20px;
+}
+.button{
+    padding: 10px 20px 10px 20px;
+    font-size: 25px;
+    width: 360px;
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}  
+.button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}  
+.button:hover span{
+    padding-right: 25px;
+}
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+.head{
+    padding: 35px 30px 35px 60px;
+    text-align: left; 
+}
+#deHome{
+    font-size: 80px;
+}
+.button3{
+    margin-left: 230px
+}
+@media(max-width:825px){
+    .button3{
+        margin-left: 45px;
+    }
+}
+@media(max-width:448px){
+    #deHome{
+        font-size: 55px;
+        text-align: center;
+    }
+    .head{
+        padding: 25px 20px 25px 40px;
+    }
+    .buttonDiv{
+        width: 80%;
+        margin: 10px 5px 5px 30px;
+        padding: 5px 10px 5px 10px;
+    }
+    .button{
+        width: 300px;
+    }
+}
+@media(max-width:375px){
+    .button{
+        width: 200px;
+    }
+}
+
+/* Bill.js */
+.invalid_input {
+    border: 2px solid red;
+}
+
+/* Stock.js */
+.searchBar::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+/* ModifyStock.js */
+@media(max-width: 360px){
+    .btnAddDelete{
+        margin-top: 40px;
+    }
+}
+
+/* Bill_id.js */
+.backToSales{
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.backToSales:hover{
+    color: black;
+    transform: scale(1.15);
+}
+.custom-table{
+    width: 100%;
+    background-color: #ffffff;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+.custom-table th, .custom-table td{
+    padding: 12px;
+    vertical-align: middle;
+}
+.custom-table thead th{
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.custom-table, .custom-table th, .custom-table td{
+    border: 1px solid #ddd;
+}
+.info-container {
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.info-item {
+    flex-grow: 1;
+}
+.divider{
+    width: 1px;
+    height: 50px;
+    background-color: #dee2e6;
+    margin: 0 15px;
+}
+.noColumn {
+    display: table-cell;
+}
+@media (max-width: 400px){
+    .noColumn {
+        display: none;
+    }
+    .info-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .divider {
+        display: none;
+    }
+    .info-item {
+        margin-bottom: 10px;
+    }
+}
+
+/* Sales.js */
+.tableSales th{
+    background-color: #343a40;
+    color: white;
+}
+@media(max-width: 378px){
+    .btnClear{
+        margin-top: 20px;
+    }
+}
