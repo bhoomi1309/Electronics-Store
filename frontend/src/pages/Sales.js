@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { fetchBillData, deleteBill, getBillById, renumberBills, updateElectronics, fetchElectronicsData } from './API';
+import { fetchBillData, deleteBill, getBillById, renumberBills, updateElectronicsStock, fetchElectronicsData } from './API';
 import Swal from 'sweetalert2';
 import './style.css';
 
@@ -56,7 +56,7 @@ function Sales() {
                                 Available: newStock,
                                 CostPrice: parseInt(itemData.CostPrice)
                             };
-                            updateElectronics(stockData, itemData.No);
+                            updateElectronicsStock(stockData, itemData.No);
                         }
                     }
                     await deleteBill(id, navigate);

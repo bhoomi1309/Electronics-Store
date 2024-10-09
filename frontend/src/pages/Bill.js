@@ -1,6 +1,6 @@
 import './style.css';
 import { useState, useEffect, useRef } from 'react';
-import { fetchElectronicsData, addBill, updateElectronics } from './API';
+import { fetchElectronicsData, addBill, updateElectronicsStock } from './API';
 import { useNavigate, useParams } from 'react-router-dom';
 import Swal from 'sweetalert2';
 
@@ -178,7 +178,7 @@ function Bill(){
                         Available: newStock,
                         CostPrice: parseInt(itemData.CostPrice)
                     };
-                    updateElectronics(stockData, itemData.No);
+                    updateElectronicsStock(stockData, itemData.No);
                 }
             }
         }

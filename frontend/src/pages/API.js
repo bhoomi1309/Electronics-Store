@@ -29,7 +29,7 @@ export const editElectronics = (data, id, navigate) => {
             navigate('/stock');
         });
 };
-export const updateElectronics = (data, id) => {
+export const updateElectronicsStock = (data, id) => {
     fetch(apiStock + '/modifyStock/' + id, {
         method: "PUT",
         body: JSON.stringify(data),
