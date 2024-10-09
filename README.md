@@ -10,6 +10,7 @@ This is a basic application that can be used by a retailer of electronics items 
 - **Sales Tracking**: Record sales transactions and monitor stock levels.
 - **Profit/Loss Reports**: Tracks profit/loss of any day.
 - **Automatic Stock Adjustment**: When a bill is created/deleted, the stock is automatically updated to reflect the quantity changed.
+- **View Bill Contents**: Click on a bill to see its detailed contents.
 
 ## Technologies Used
 
